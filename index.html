@@ -5,54 +5,49 @@
   <meta charset="utf-8">
   <title>Пример веб-страницы</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <div class="help">
       <div class="help__text">
-        <p class="logo">Tecknologies</p>
+        <span class="logo">Tecknologies</span>
         <p class="help__about">Get how-to help and instructions or specific features in</p>
       </div>
       <div class="help__link">
         <a href="#" class="help__btn">HELP CENTER</a>
         <span>or</span>
         <a class="help__btn" href="#">SUPPORT</a>
-
       </div>
     </div>
-
     <div class="form">
       <div class="form__items">
-        
-          <form action="">
-            <div class="tab">
-              <div class="form__entry">
-                <p class="welcome">Welcome back</p>
-                <p class="registry">Sign in to continue IO Tecknologies</p>
-              </div>
-              <input class="form__input" type="email" name="" placeholder="Your email" required>
-              <input class="form__password" type="password" name="" placeholder="Your password" required >
-              <button class="form__sign-in" type="submit"> <span>LOG IN</span> </button>
-              <p class="forget__pswrd">Forgot your password? <button type="button" id="nextBtn">Reset</button> </p>
+        <form action="">
+          <div class="tab">
+            <div class="form__entry">
+              <p class="welcome">Welcome back</p>
+              <p class="registry">Sign in to continue IO Tecknologies</p>
             </div>
-            <div class="tab">
-              <div class="form__entry">
-                <button class="back" type="button" id="prevBtn"></button>
-                <p class="forgot">Forgot password?</p>
-              </div>
-              <input class="form__input" type="email" name="" placeholder="Enter your email" required >
-              <button class="form__sign-in" type="submit" > <span>Send Me Instructions</span> </button>
+            <input class="form__input" type="email" name="" placeholder="Your email" required>
+            <input class="form__password" type="password" name="" placeholder="Your password" required>
+            <button class="form__sign-in" type="submit"> <span>LOG IN</span> </button>
+            <p class="forget__pswrd">Forgot your password? <button type="button" id="nextBtn">Reset</button> </p>
+          </div>
+          <div class="tab">
+            <div class="form__entry">
+              <button class="back" type="button" id="prevBtn"></button>
+              <p class="forgot">Forgot password?</p>
             </div>
-          </form>
-        
+            <input class="form__input" type="email" name="" placeholder="Enter your email" required>
+            <button class="form__sign-in" type="submit"> <span>Send Me Instructions</span> </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

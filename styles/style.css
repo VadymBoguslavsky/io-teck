@@ -1,39 +1,39 @@
 @font-face {
   font-family: "museo";
-  src: url(fonts/museosanscyrl/MuseoSansCyrl.otf);
+  src: url(../fonts/museosanscyrl/MuseoSansCyrl.otf);
 }
 
 @font-face {
   font-family: "helvetica-light";
-  src: url(fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf);
+  src: url(../fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf);
 }
 
 @font-face {
   font-family: "helvetica-bold";
-  src: url(fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf);
+  src: url(../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf);
 }
 
 @font-face {
   font-family: "helvetica-med";
-  src: url(fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf);
+  src: url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf);
 }
 
 @font-face {
   font-family: "helvetica-reg";
-  src: url(fonts/HelveticaNeue-Regular/HelveticaNeue.ttf);
+  src: url(../fonts/HelveticaNeue-Regular/HelveticaNeue.ttf);
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
-  background-image: url("img/leftbg.png");
+  background-image: url("../img/leftbgwide.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   color: white;
 }
 
-.help {
+.help, .form {
   height: 100%;
   width: 50%;
   display: flex;
@@ -43,10 +43,9 @@
 }
 
 .form {
-  background-image: url("img/right.png");
+  background-image: url("../img/right.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%;
 }
 
 .logo {
@@ -55,7 +54,7 @@
   font-size: 24px;
   color: #a4b9e3;
   font-weight: 300;
-  left: 190px;
+  left: 25px;
 }
 
 .logo::before {
@@ -65,7 +64,7 @@
   height: 50px;
   left: -60px;
   top: -5px;
-  background-image: url("img/logo.png");
+  background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -86,6 +85,10 @@
 
 .help__link span {
   margin: 0 15px;
+}
+
+.help__text {
+  text-align: center;
 }
 
 .help__btn {
@@ -154,7 +157,6 @@
 
 .form__items {
   max-width: 60%;
-  margin: 140px auto 0 auto;
 }
 
 .form__sign-in {
@@ -185,7 +187,7 @@
   top: 0;
   position: absolute;
   display: block;
-  background-image: url("img/right-arrow.png")
+  background-image: url("../img/right-arrow.png")
 }
 
 .forget__pswrd {
@@ -205,6 +207,7 @@
 
 .back {
   position: relative;
+  cursor: pointer;
 }
 
 .back::before {
@@ -213,7 +216,7 @@
   display: block;
   width: 55px;
   height: 45px;
-  background-image: url("img/left-arrow.png");
+  background-image: url("../img/left-arrow.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -240,4 +243,46 @@
 
 .form__password:valid {
   border-color: #00bdff;
+}
+
+@media(min-width:1440px) {
+  .form__items {
+    min-width: 60%;
+    margin-left: 50px;
+  }
+}
+
+@media(max-width:1050px) {
+  .wrapper {
+    display: block;
+  }
+  .form, .help {
+    width: 100%;
+  }
+  .help {
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-image: url("../img/leftbg.png");
+    background-size: cover;
+
+  }
+  .form {
+    padding: 50px 0;
+    background: #10172f
+  }
+  .help__link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .help__link .help__btn:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .help__link span {
+    margin: 10px;
+  }
+  .form__items {
+    width: 100%;
+  }
 }
