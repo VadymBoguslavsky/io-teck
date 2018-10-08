@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "museo";
+  src: url(fonts/museosanscyrl/MuseoSansCyrl.otf);
+}
+
+@font-face {
+  font-family: "helvetica-light";
+  src: url(fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf);
+}
+
+@font-face {
+  font-family: "helvetica-bold";
+  src: url(fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf);
+}
+
+@font-face {
+  font-family: "helvetica-med";
+  src: url(fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf);
+}
+
+@font-face {
+  font-family: "helvetica-reg";
+  src: url(fonts/HelveticaNeue-Regular/HelveticaNeue.ttf);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-image: url("img/leftbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.help {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-image: url("img/right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.logo {
+  position: relative;
+  font-family: "museo";
+  font-size: 24px;
+  color: #a4b9e3;
+  font-weight: 300;
+  left: 190px;
+}
+
+.logo::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: -60px;
+  top: -5px;
+  background-image: url("img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.help__about {
+  margin-top: 70px;
+  font-family: "helvetica-light";
+  color: #ebf0f9;
+  font-size: 21px;
+}
+
+.help__link {
+  margin-top: 40px;
+  font-family: "helvetica-light";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.help__link span {
+  margin: 0 15px;
+}
+
+.help__btn {
+  font-size: 14px;
+  background-color: #7d94d3;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "helvetica-bold";
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(91, 116, 190, 1);
+  -moz-box-shadow: 0px 0px 17px 1px rgba(91, 116, 190, 1);
+  box-shadow: 0px 0px 17px 1px rgba(91, 116, 190, 1);
+}
+
+.welcome {
+  font-family: "helvetica-med";
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.registry {
+  font-family: "helvetica-reg";
+  font-size: 19px;
+  color: #565e78;
+}
+
+.form__entry {
+  margin-bottom: 55px;
+}
+
+.form__wrapper input {
+  color: white;
+  font-family: "helvetica-med";
+  font-size: 18px;
+  margin-bottom: 40px;
+  padding: 25px 0;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #2f364f;
+}
+
+.form__wrapper input::placeholder {
+  font-family: "helvetica-med";
+  font-size: 17px;
+  color: #565e78;
+}
+
+.form__wrapper input:focus {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.form__itms {
+  max-width: 60%;
+  margin: 140px auto 0 auto;
+}
+
+.form__sign-in {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  padding: 23px 0;
+  text-align: center;
+  font-family: "helvetica-bold";
+  font-size: 19px;
+  background: linear-gradient(to right, rgba(15, 87, 169, 1) 0%, rgba(91, 145, 196, 1) 59%, rgba(143, 186, 214, 1) 100%);
+}
+
+.form__sign-in span {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.form__sign-in span::after {
+  content: "";
+  width: 30px;
+  right: -45px;
+  height: 20px;
+  top: 0;
+  position: absolute;
+  display: block;
+  background-image: url("img/right-arrow.png")
+}
+
+.forget__pswrd {
+  margin-top: 100px;
+  font-family: "helvetica-reg";
+  font-size: 16px;
+  font-weight: bold;
+  color: #565e78;
+}
+
+.forget__pswrd button {
+  font-family: "helvetica-reg";
+  font-size: 16px;
+  text-decoration: none;
+  color: #2f70b2;
+}
+
+.back {
+  position: relative;
+}
+
+.back::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 45px;
+  background-image: url("img/left-arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forgot {
+  font-family: "helvetica-med";
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 30%;
+}
+
+.tab {
+  display: none;
+}
