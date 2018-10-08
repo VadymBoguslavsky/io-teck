@@ -137,11 +137,15 @@
   color: #565e78;
 }
 
-.form__wrapper input:focus {
+.form__password, .form__input:focus {
   outline: none;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #00be98;
+}
+
+.form__password:focus {
+  border-bottom: 1px solid #00bdff
 }
 
 .form__itms {
@@ -216,4 +220,17 @@
 
 .tab {
   display: none;
+}
+
+/* .form__input:invalid {
+  border-color: red;
+} */
+
+
+
+.form__input.invalid {
+  border-color: red;
+}
+.form__input.valid {
+  border-color: yellow;
 }
