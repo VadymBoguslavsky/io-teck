@@ -226,11 +226,14 @@
   border-color: red;
 } */
 
-
-
 .form__input.invalid {
   border-color: red;
 }
-.form__input.valid {
-  border-color: yellow;
+
+.form__input:valid {
+  border-color: #00be98;
+}
+
+.form__password:valid {
+  border-color: #00bdff;
 }
