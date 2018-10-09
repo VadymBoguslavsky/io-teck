@@ -19,12 +19,12 @@
     tab.classList.remove("show");
   }
 
-}())
+}());
 
-function valiDcustom() {
-  var invalidClassName = 'invalid'
-  var inputs = document.querySelectorAll('.form__input')
-  var signInBtn = document.querySelector('.form__sign-in')
+(function () {
+  var invalidClassName = 'invalid';
+  var inputs = document.querySelectorAll('.form__input');
+  var signInBtn = document.querySelector('.form__sign-in');
   const customMessages = {
     valueMissing: 'Please fill out this field!',
     emailMismatch: 'Ooops, you entered an invalid email',
@@ -32,12 +32,12 @@ function valiDcustom() {
 
   inputs.forEach(function (input) {
     input.addEventListener('invalid', function () {
-      input.classList.add(invalidClassName)
-      signInBtn.classList.add(invalidClassName)
+      input.classList.add(invalidClassName);
+      signInBtn.classList.add(invalidClassName);
     })
     input.addEventListener('input', function () {
       if (input.validity.valid) {
-        input.classList.remove(invalidClassName)
+        input.classList.remove(invalidClassName);
       }
     })
     function checkValidity() {
@@ -46,8 +46,8 @@ function valiDcustom() {
         : getCustomMessage(input.type, input.validity, customMessages)
       input.setCustomValidity(message || '')
     }
-    input.addEventListener('input', checkValidity)
-    input.addEventListener('invalid', checkValidity)
+    input.addEventListener('input', checkValidity);
+    input.addEventListener('invalid', checkValidity);
   })
 
   function getCustomMessage(type, validity) {
@@ -61,5 +61,4 @@ function valiDcustom() {
       }
     }
   }
-}
-valiDcustom() 
+})();
