@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "helvetica-light";
-  src: url(../fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf);
+  src: url(../fonts/HelveticaNeue-Light/9204.otf);
 }
 
 @font-face {
@@ -23,14 +23,7 @@
   src: url(../fonts/HelveticaNeue-Regular/HelveticaNeue.ttf);
 }
 
-html {
-  /* background-image: url(../fp.png);
-  background-size: cover;
-  opacity: 0.3; */
-}
-
 .wrapper {
-  /* opacity: 0.5; */
   display: flex;
   flex-direction: row;
   background-image: url("../img/leftbgwide.png");
@@ -56,6 +49,7 @@ html {
 }
 
 .logo {
+  letter-spacing: -2px;
   position: relative;
   font-family: "museo";
   font-size: 40px;
@@ -79,7 +73,7 @@ html {
 .help__about {
   font-family: "helvetica-light";
   color: #ebf0f9;
-  font-size: 28px;
+  font-size: 27px;
   margin-top: 67px;
 }
 
@@ -87,13 +81,11 @@ html {
   font-family: "helvetica-light";
   font-size: 27px;
   margin-right: 44px;
-  padding-top: 44px;
+  padding-top: 37px;
 }
 
-.help__link span {}
-
 .help__text {
-  padding-top: 145px;
+  padding-top: 110px;
   text-align: center;
 }
 
@@ -118,6 +110,7 @@ html {
   font-family: "helvetica-med";
   font-size: 50px;
   text-align: left;
+  letter-spacing: -2px;
   margin-bottom: 11px;
 }
 
@@ -221,7 +214,7 @@ html {
 
 .forget__pswrd button {
   font-family: "helvetica-reg";
-  font-size: 23px;
+  font-size: 25px;
   text-decoration: none;
   color: #2f70b2;
 }
@@ -279,7 +272,7 @@ html {
   .form__items {
     margin-right: 35px;
     min-width: 45%;
-    padding-top: 193px;
+    padding-top: 165px;
   }
 }
 
