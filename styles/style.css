@@ -232,7 +232,9 @@
 .tab {
   display: none;
 }
-
+.show{
+  display: block;
+}
 .form__input.invalid {
   border-color: red;
 }

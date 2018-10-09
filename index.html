@@ -13,7 +13,7 @@
   <div class="wrapper">
     <div class="help">
       <div class="help__text">
-        <span class="logo">Tecknologies</span>
+        <span class="logo">Technologies</span>
         <p class="help__about">Get how-to help and instructions or specific features in</p>
       </div>
       <div class="help__link">
@@ -24,26 +24,29 @@
     </div>
     <div class="form">
       <div class="form__items">
-        <form action="">
-          <div class="tab">
+        <div class="tab show" data-tabame="login">
+          <form action="">
             <div class="form__entry">
               <p class="welcome">Welcome back</p>
-              <p class="registry">Sign in to continue IO Tecknologies</p>
+              <p class="registry">Sign in to continue IO Technologies</p>
             </div>
-            <input class="form__input" type="email" name="" placeholder="Your email" required>
-            <input class="form__password" type="password" name="" placeholder="Your password" required>
+            <input class="form__input" type="email" name="email" placeholder="Your email" required>
+            <input class="form__password" type="password" name="password" placeholder="Your password" required>
             <button class="form__sign-in" type="submit"> <span>LOG IN</span> </button>
-            <p class="forget__pswrd">Forgot your password? <button type="button" id="forgotPassword" data-password="passwordTab">Reset</button> </p>
-          </div>
-          <div class="tab">
+            <p class="forget__pswrd">Forgot your password? <button type="button" data-showtab="forgot-pass">Reset</button>
+            </p>
+          </form>
+        </div>
+        <div class="tab" data-tabame="forgot-pass">
+          <form action="">
             <div class="form__entry">
-              <button class="back" type="button" id="backToMain" data-maintab="mainTablet"></button>
+              <button class="back" type="button" data-showtab="login"></button>
               <p class="forgot">Forgot password?</p>
             </div>
-            <input class="form__input" type="email" name="" placeholder="Enter your email" required>
+            <input class="form__input" type="email" name="email" placeholder="Enter your email" required>
             <button class="form__sign-in" type="submit"> <span>Send Me Instructions</span> </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>

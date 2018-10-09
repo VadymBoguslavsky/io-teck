@@ -1,25 +1,24 @@
 (function () {
-  var currentTab = 0;
-  var forgotPassword = document.getElementById("forgotPassword")
-  var backToMain = document.getElementById("backToMain")
-  forgotPassword.addEventListener("click", function () { activeTab(1) })
-  backToMain.addEventListener("click", function () { activeTab(-1) })
+  var elements = document.querySelectorAll("[data-showtab]");
+  elements.forEach(e => e.addEventListener("click", changeTabClick));
 
-  function showTab(n) {
-    var x = document.getElementsByClassName("tab");
-    x[n].style.display = "block";
+  function changeTabClick(event) {
+    hideAllTabs();
+    var tabName = event.target.dataset.showtab;
+    var tabToShow = document.querySelector(".tab[data-tabame="+tabName+"]");
+    show(tabToShow);
+  }
+  function hideAllTabs(){
+    var tabs = document.querySelectorAll(".tab");
+    tabs.forEach(tab => hide(tab));
+  }
+  function show(tab){
+    tab.classList.add("show");
+  }
+  function hide(tab){
+    tab.classList.remove("show");
   }
 
-  function activeTab(n) {
-    var x = document.getElementsByClassName("tab");
-    x[currentTab].style.display = "none";
-    currentTab = currentTab + n;
-    if (currentTab >= x.length) {
-      return false;
-    }
-    showTab(currentTab);
-  }
-  showTab(currentTab);
 }())
 
   (function () {
