@@ -59,7 +59,7 @@ html {
   position: relative;
   font-family: "museo";
   font-size: 40px;
-  color: #a4b9e3;
+  color: #a5bbe4;
   font-weight: 300;
   left: 38px;
 }
@@ -124,7 +124,7 @@ html {
 .registry {
   font-family: "helvetica-reg";
   font-size: 26px;
-  color: #565e78;
+  color: #616983;
 }
 
 .form__entry {
@@ -147,7 +147,7 @@ html {
 .form__items input::placeholder {
   font-family: "helvetica-med";
   font-size: 27px;
-  color: #565e78;
+  color: #616983;
 }
 
 .form__password, .form__input:focus {
