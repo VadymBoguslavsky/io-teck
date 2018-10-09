@@ -1,9 +1,9 @@
 (function () {
   var currentTab = 0;
-  var nextBtn = document.getElementById("nextBtn")
-  var prevBtn = document.getElementById("prevBtn")
-  nextBtn.addEventListener("click", function () { activeTab(1) })
-  prevBtn.addEventListener("click", function () { activeTab(-1) })
+  var forgotPassword = document.getElementById("forgotPassword")
+  var backToMain = document.getElementById("backToMain")
+  forgotPassword.addEventListener("click", function () { activeTab(1) })
+  backToMain.addEventListener("click", function () { activeTab(-1) })
 
   function showTab(n) {
     var x = document.getElementsByClassName("tab");
