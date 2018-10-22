@@ -169,6 +169,7 @@
   font-family: "helvetica-bold";
   font-size: 19px;
   background: linear-gradient(to right, rgba(15, 87, 169, 1) 0%, rgba(91, 145, 196, 1) 59%, rgba(143, 186, 214, 1) 100%);
+  transition: all 0.3s ease-in-out;
 }
 
 .reset__password {
@@ -202,6 +203,38 @@
   position: absolute;
   display: block;
   background-image: url("../img/right-arrow.png")
+}
+
+.form__sign-in:hover span::after {
+  right: -55px;
+}
+
+.form__sign-in:hover {
+  animation: fadeIn 0.2s;
+  -webkit-animation: fadeIn 0.2s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    background: linear-gradient(to right, rgba(15, 87, 169, 1) 0%, rgba(91, 145, 196, 1) 59%, rgba(143, 186, 214, 1) 100%);
+  }
+  50% {
+    background: linear-gradient(to right, rgba(91, 145, 196, 1) 0, rgba(15, 87, 169, 1) 59%, rgba(143, 186, 214, 1) 100%);
+  }
+  100% {
+    background: linear-gradient(to right, rgba(143, 186, 214, 1) 0%, rgba(91, 145, 196, 1) 59%, rgba(15, 87, 169, 1) 100%);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    background: linear-gradient(to right, rgba(15, 87, 169, 1) 0%, rgba(91, 145, 196, 1) 59%, rgba(143, 186, 214, 1) 100%);
+  }
+  50% {
+    background: linear-gradient(to right, rgba(91, 145, 196, 1) 0, rgba(15, 87, 169, 1) 59%, rgba(143, 186, 214, 1) 100%);
+  }
+  100% {
+    background: linear-gradient(to right, rgba(143, 186, 214, 1) 0%, rgba(91, 145, 196, 1) 59%, rgba(15, 87, 169, 1) 100%);
+  }
 }
 
 .forget__pswrd {
